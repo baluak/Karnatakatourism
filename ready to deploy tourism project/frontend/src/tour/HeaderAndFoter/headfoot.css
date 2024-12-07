@@ -1,0 +1,769 @@
+/* FOR HEADER */
+
+#outer_container {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+  position: fixed;
+  margin: 0;
+  background-color: white;
+  top: -20px;
+  height: 102px;
+  z-index: 5;
+  left: 0;
+}
+
+#karnataka_symbol {
+  position: absolute;
+  top: 10px;
+  left: -12px;
+  bottom: 0px;
+  right: 0px;
+  width: 310px;
+  height: 120px;
+  padding: 0;
+}
+
+#feedback_and_logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 278px;
+  padding: 10px 0;
+  background-color: #333;
+  color: white;
+  height: 20px;
+  width: calc(100% - 460px);
+  /* Adjusted width */
+  margin-right: 0px;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+
+.toplabel {
+  font-size: 90%;
+}
+
+.toplabel:hover {
+  background-color: blue;
+  font-weight: bold;
+}
+
+#leftside,
+#rightside {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-left: 25px;
+  margin: 0;
+}
+
+#leftside li,
+#rightside li {
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+}
+
+#leftside li:hover,
+#rightside li:hover {
+  transform: scale(1.5);
+}
+
+#leftside li p,
+#rightside li p {
+  margin: 0;
+  color: white;
+}
+
+#leftside li #email {
+  border: none;
+  text-decoration: none;
+}
+
+#earth {
+  float: right;
+  height: max-content;
+}
+
+#home {
+  text-decoration: none;
+}
+
+#home:hover {
+  color: red;
+}
+
+/* _______________________________________________________________________________________________________________ */
+
+/* list */
+
+#list {
+  margin: auto;
+  padding: auto;
+  border: 1px solid black;
+  width: 1020px;
+  margin-right: 180px;
+  border-radius: 10px;
+  height: 80px;
+  flex-wrap: wrap;
+}
+
+#list li:hover {
+  color: red;
+}
+
+#list #one,
+#two,
+#three,
+#four,
+#five,
+#six,
+#seven,
+#eight {
+  display: inline-block;
+  margin-left: 22px;
+  padding: 10px;
+  border-left: 1px solid black;
+  font-weight: bold;
+}
+
+#list #one,
+#two,
+#three,
+#five,
+#six,
+#eight {
+  margin-bottom: 200px;
+  position: relative;
+  top: -24px;
+  height: 2.6em;
+}
+
+#one,
+#eight {
+  position: relative;
+  left: -20px;
+}
+
+#four,
+#seven {
+  word-wrap: break-word;
+  width: 120px;
+  height: 3em;
+}
+
+#eight {
+  left: 5px;
+}
+
+/* TWO */
+
+#dropdown_two {
+  display: block;
+  /* Ensure it's always part of the layout but hidden initially */
+  position: absolute;
+  background-color: black;
+  z-index: -1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+  min-width: 160px;
+  text-align: center;
+  border-radius: 10px;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease, max-height 1.6s ease;
+  padding-bottom: 10px;
+}
+
+#first_drop_down {
+  color: white;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: center;
+}
+
+#dropdown_two > li {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  margin-top: 15px;
+  list-style: none;
+}
+
+#dropdown_two > li:hover {
+  display: block;
+  border-bottom: 1px solid white;
+  font-size: 22px;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+#two:hover #dropdown_two {
+  opacity: 1;
+  max-height: 500px;
+  /* Adjust based on the total height of the dropdown content */
+}
+
+/* THREE */
+
+#dropdown_three {
+  display: block;
+  /* Ensure it's always part of the layout but hidden initially */
+  position: absolute;
+  background-color: black;
+  z-index: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+  min-width: 160px;
+  text-align: center;
+  border-radius: 10px;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease, max-height 1.6s ease;
+  padding-bottom: 10px;
+}
+
+#two_drop_down {
+  color: white;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: center;
+}
+
+#dropdown_three > li {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  margin-top: 15px;
+  list-style: none;
+}
+
+#dropdown_three > li:hover {
+  display: block;
+  border-bottom: 1px solid white;
+  font-size: 22px;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+#three:hover #dropdown_three {
+  opacity: 1;
+  max-height: 500px;
+  /* Adjust based on the total height of the dropdown content */
+}
+
+/* FIVE */
+
+/* Main dropdown menu styling */
+/* Main dropdown menu styling */
+#dropdown_five {
+  display: none; /* Hide the dropdown menu by default */
+  position: absolute;
+  background-color: black;
+  list-style: none;
+  left: -5px;
+  margin-top: 30px;
+  border-radius: 10px;
+  font-size: 15px;
+  opacity: 0;
+  height: 19em;
+  transition: opacity 0.5s ease, max-height 0.5s ease; /* Adjusted max-height transition */
+}
+
+/* Show dropdown menu when hovering over the parent */
+#five:hover > #dropdown_five {
+  display: block; /* Ensure the menu is displayed */
+  opacity: 1;
+  width: 13em;
+  max-height: 500px; /* Adjust this value as needed */
+  text-align: center;
+  left: -4em;
+}
+
+/* Optional: Style for individual list items */
+#dropdown_five li {
+  position: relative;
+  margin-top: 18px;
+  margin-right: 0;
+  border-bottom: 1px solid black;
+  color: white;
+  border-radius: 20px;
+  left: -2em;
+  margin-left: 0;
+}
+
+/* Style for links in the dropdown */
+.dropdown-link {
+  color: white;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+/* Change border and font size on hover */
+#dropdown_five li:hover {
+  border-bottom: 1px solid white;
+  font-size: 18px;
+  transition: 0.3s;
+  color: white;
+}
+
+/* Brochure dropdown styling */
+#dropdown_brochure {
+  position: relative;
+  font-weight: normal;
+  color: white;
+  cursor: pointer; /* Make it clear it's clickable */
+  top: -0.5em;
+  left: -2.5em;
+  width: 12.8em;
+}
+
+/* Styling for submenu */
+#submenu {
+  display: none; /* Hide submenu by default */
+  position: absolute; /* Position it relative to #dropdown_brochure */
+  background-color: black;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+/* Show submenu on hover */
+#dropdown_brochure:hover > #submenu {
+  display: block;
+  left: 14.3em;
+  text-align: right;
+  width: 12.5em;
+  left: 15em;
+  top: -5em;
+}
+
+/* Style for submenu items */
+#submenu li {
+  padding: 10px; /* Adjust padding as needed */
+  color: white;
+  text-align: center;
+  padding-top: 0;
+  left: 0.1em;
+}
+
+.submenu-link {
+  color: white;
+  text-decoration: none;
+  z-index: 5;
+}
+
+/* Change border and font size on hover */
+#submenu li:hover {
+  border-bottom: 1px solid white;
+  font-size: 16px;
+  transition: 0.3s;
+  color: white;
+  z-index: 5;
+}
+
+#garrow {
+  position: relative;
+  font-size: 0.5em;
+  color: rgb(175, 165, 165);
+  left: 45px;
+  background-color: black;
+}
+
+#arrow {
+  position: relative;
+  font-size: 0.5em;
+  color: rgb(175, 165, 165);
+  top: 0.9em;
+  left: 2em;
+  background-color: black;
+}
+
+/* Brochure dropdown styling  */
+#dropdown_gallary {
+  position: relative;
+  font-weight: normal;
+  color: white;
+  cursor: pointer; /* Make it clear it's clickable */
+}
+
+.galleryname {
+  position: relative;
+  top: -0.7em;
+}
+
+/* Styling for submenu */
+#ssubmenu {
+  display: none; /* Hide submenu by default */
+  background-color: black;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  font-size: 15px;
+  width: 200px; /* Adjust as needed */
+  left: 12em;
+  top: -2em;
+
+  line-height: 0.4em;
+}
+
+#dropdown_gallary:hover > #ssubmenu {
+  display: block;
+  position: absolute;
+  background-color: black;
+}
+
+/* Style for submenu items */
+#ssubmenu li {
+  border-bottom: 1px solid white;
+  color: white;
+  text-align: center;
+}
+
+.southname {
+  line-height: 1em;
+}
+
+/* SEVEN */
+
+#dropdown_seven {
+  display: block;
+  /* Ensure it's always part of the layout but hidden initially */
+  position: absolute;
+  background-color: black;
+  z-index: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+  min-width: 160px;
+  text-align: center;
+  border-radius: 10px;
+  opacity: 0;
+  max-height: 0;
+  top: 110px;
+  overflow: hidden;
+  transition: opacity 0.5s ease, max-height 1.6s ease;
+  color: white;
+  width: 270px;
+  padding-bottom: 10px;
+}
+
+#dropdown_seven > li {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  margin-top: 15px;
+  list-style: none;
+}
+
+#dropdown_seven > li:hover {
+  display: block;
+  border-bottom: 1px solid white;
+  font-size: 20px;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+#seven:hover #dropdown_seven {
+  opacity: 1;
+  max-height: 500px;
+  /* Adjust based on the total height of the dropdown content */
+}
+
+#d_seven {
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+/* footer.jsx */
+
+#outer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  z-index: 5;
+}
+
+#view {
+  margin: 0;
+  padding: 0;
+  background-color: red;
+  color: white;
+  width: 5em;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 15px;
+  padding-top: 8px;
+  height: 30px;
+  padding-right: 10px;
+  margin-left: 24px;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#firstlist #one h1 {
+  color: black;
+  margin-left: 100px;
+  margin-bottom: 0;
+}
+
+#firstlist #two h5 {
+  color: coral;
+  font-style: italic;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+#fimg {
+  display: flex;
+  margin-right: 70px;
+  position: relative;
+  top: 0.7em;
+  z-index: 1;
+}
+
+#fimg li {
+  margin-left: 90px;
+  position: relative;
+}
+
+#foot2c {
+  max-width: auto;
+  padding: auto;
+  background-color: black;
+  display: flex;
+  color: white;
+  justify-content: center;
+  z-index: 3;
+  position: relative;
+}
+
+#ful li {
+  list-style-type: disc;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#sul li {
+  font-weight: bold;
+  margin-top: 20px;
+  list-style-type: disc;
+}
+
+#ful #ql {
+  font-size: 25px;
+  font-weight: bold;
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+#cont #coo {
+  font-size: 25px;
+  font-weight: bold;
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+#cont {
+  margin-top: 40px;
+}
+
+#sul {
+  margin: 83px;
+}
+
+#simg {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+#simg img {
+  width: 250px;
+}
+
+#fo {
+  color: black;
+  text-align: center;
+}
+
+#co {
+  color: orange;
+  font-style: italic;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.klag {
+  position: relative;
+  font-size: 14px;
+  font-weight: bolder;
+  bottom: 14px;
+  padding: 0;
+  align-items: center;
+}
+
+#kwid {
+  width: -50px;
+}
+
+@media (width > 500px) {
+  .dots {
+    visibility: hidden;
+  }
+
+  .klag2 {
+    padding-left: 1rem;
+  }
+
+  .enm {
+    padding-left: 1rem;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    font-size: 0.9em;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    transition: transform 0.3s ease;
+  }
+
+  .dots2 {
+    display: none;
+  }
+
+  #mobhead {
+    display: none;
+  }
+}
+
+/* MEDIA QUERY for mobile */
+
+@media (width < 500px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  #karnataka_symbol {
+    display: none;
+  }
+
+  #earth,
+  #feedback_and_logos,
+  #list {
+    display: none;
+  }
+
+  #outer_container {
+    margin: 0 auto;
+    height: 30px;
+  }
+
+  #mobhead {
+    position: fixed;
+    display: block;
+    display: flex;
+    margin-top: -317px;
+    margin-left: -35px;
+    min-width: 150px;
+  }
+
+  #MOBE {
+    position: relative;
+    display: block;
+    left: 50px;
+    top: 30px;
+    width: 5rem;
+    height: 5rem;
+    font-size: larger;
+    min-width: 10em;
+  }
+
+  .mkar {
+    position: relative;
+    width: 25em;
+    left: -9em;
+    min-width: 150px;
+  }
+
+  #language {
+    position: relative;
+    top: 1.5em;
+    right: 2em;
+  }
+
+  #list {
+    position: relative;
+    display: block;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    flex-direction: column;
+    margin-top: 52px;
+    flex-wrap: nowrap;
+    height: 15.5em;
+    left: -1.3em;
+    border: none;
+    z-index: 5;
+  }
+
+  .dots {
+    display: none;
+  }
+
+  #list #one,
+  #two,
+  #three,
+  #four,
+  #five,
+  #six,
+  #seven {
+    position: relative;
+    text-decoration: none;
+    border-left: none;
+    width: 250px;
+    line-height: 35px;
+    margin-left: 0;
+    margin: 0;
+    padding: 0;
+    left: 5px;
+    font-size: 14px;
+    border: none;
+    color: white;
+    top: 0.1em;
+    background-color: black;
+    /* display: none; */
+    border-radius: 3px;
+    padding-left: 5px;
+  }
+
+  #list .enm {
+    color: white;
+  }
+}
+
+#simg img {
+  margin-left: 1.7em;
+}

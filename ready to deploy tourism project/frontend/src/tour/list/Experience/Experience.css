@@ -1,0 +1,355 @@
+.main {
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 460px 460px;
+}
+
+
+.one img {
+  margin: 0 auto;
+  height: 450px;
+  width: 480px;
+}
+
+
+.one h2 {
+  color: white;
+  position: relative;
+  left: 30%;
+  bottom: 30%;
+
+}
+
+.onr #bit {
+  position: relative;
+  left: -20px;
+}
+
+
+.top {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 125px;
+}
+
+.dis {
+  margin-left: 50px;
+}
+
+.dis h1 {
+  position: relative;
+  left: 38%;
+  bottom: -20px;
+  color: black;
+}
+
+/* cuisine */
+
+
+#ctop img {
+  margin: 0;
+  padding: 0;
+  margin-top: 125px;
+  position: relative;
+  width: 100%;
+  height: 520px;
+}
+
+
+.tag {
+  left: 50%;
+  margin-left: 50px;
+  color: black;
+}
+
+
+.subm {
+  margin-top: 70px;
+  margin-bottom: -20px;
+  position: relative;
+  left: 40%;
+  color: black;
+}
+
+.cmain {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 500px 500px;
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
+
+
+}
+
+.cmain img {
+  width: 500px;
+}
+
+.cmain h1 {
+  position: relative;
+  color: white;
+  left: 30%;
+  bottom: 35%;
+}
+
+
+
+/* festival page */
+
+
+
+.ftop {
+  width: 100%;
+  margin-top: 120px;
+}
+
+.feimg {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: 500px 500px;
+  grid-row-gap: 2px;
+
+}
+
+.feimg img {
+  width: 500px;
+}
+
+.feimg h1 {
+  position: relative;
+  color: white;
+  left: 30%;
+  bottom: 35%;
+}
+
+#seph {
+  position: relative;
+  left: 10%;
+}
+
+.feheading {
+  margin-left: 50px;
+}
+
+.feheading p {
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.feheading h1 {
+  position: relative;
+  color: black;
+  left: 30%;
+}
+
+/* Grandure page */
+#gt1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 650px;
+  /* Adjust based on your layout */
+  background-color: black;
+  /* Assuming a background to see the arrow */
+}
+
+#gt {
+  max-width: 100%;
+  height: auto;
+  margin-top: 100px;
+  margin-bottom: -60px;
+
+}
+
+#pfirst {
+  font-size: 80px;
+  color: white;
+  font-weight: bolder;
+  position: absolute;
+  bottom: 50px;
+  /* Adjust the position as needed */
+}
+
+.grpage {
+  margin: 0 auto;
+  width: 100%;
+  background-color: white;
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 355px 355px 355px 355px;
+  grid-column-gap: 4px;
+  /* Keep or adjust this value for column gap */
+}
+
+.grpage img {
+  margin: 0 auto;
+  padding: 0;
+  width: 377px;
+  height: 350px;
+}
+
+.grpage img:hover {
+  filter: blur(1px) brightness(0.5);
+  transform: rotateX(-10deg);
+  transform: rotate(2deg);
+  transition: 1s;
+}
+
+.grpage h1 {
+  position: relative;
+  color: white;
+  top: -35%;
+  left: 25px;
+}
+
+
+/* Heritage page */
+.hertop {
+  width: 100%;
+  margin-top: 120px;
+}
+
+.herimg {
+  box-sizing: border-box;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 400px 400px 400px 400px;
+  grid-gap: 5px;
+}
+
+.herimg img {
+  width: 500px;
+  height: 400px;
+}
+
+.herimg h1 {
+  position: relative;
+  color: white;
+  left: 25%;
+  bottom: 30%;
+  text-wrap: pretty;
+  z-index: 1;
+
+}
+
+.herimg  #bel{
+  left: 12px;
+}
+
+/* sprituality page */
+.sptop{
+  width: 100%;
+margin-top: 120px;
+}
+
+#th1{
+  position: relative;
+  color: black;
+  left: 40%;
+  margin-top: 50px;
+}
+
+
+.spi{
+  width: auto;
+  margin: 0 auto;
+  background-color: white;
+  display: flex;
+  animation: sscroll 22s cubic-bezier(0.42, 0, 0.58, 1.2) infinite;
+
+
+}
+
+.spi img{
+  width: 375px;
+  margin-left: 5px;
+}
+
+.spi h1{
+  position: relative;
+  color: white;
+  margin: 0 auto;
+  bottom: 70px;
+  left: 10%;
+}
+
+
+@keyframes sscroll{
+  0%{transform: translateX(0);}
+  100%{transform: translate(-175%);}
+}
+
+
+/* the wild page */
+
+.toptw{
+  width: 100%;
+  margin-top: 120px;
+}
+
+.twicont{
+  margin: 0 auto;
+  background-color: white;
+  display: flex;
+  margin-left: 10%;
+  width: 1220px;
+  animation: sscroll 16s cubic-bezier(0.42, 0, 0.58, 1.1) infinite;
+}
+
+.twicont img{
+  width: 400px;
+  height: 450px;
+  margin-left: 4px;
+  z-index: -1;
+}
+
+
+
+@keyframes twscroll{
+  0%{transform: translateX(0);}
+  100%{transform: translateX(-100%);}
+}
+
+.twicont h1{
+  position: relative;
+  left: 10%;
+  bottom: 30%;
+  color: white;
+}
+
+/* tranquility */
+
+.tqmain{
+  margin: 0 auto;
+  width: 96%;
+  background-color:white;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows:repeat(7,700px);
+
+  grid-gap: 3px;
+
+}
+
+.tqmain img{
+  width: 100%;
+  height: 700px;
+}
+
+
+.tqmain h1{
+  position: relative;
+  z-index: 0;
+  color: white;
+  left: 20%;
+  bottom: 20%;
+}
+

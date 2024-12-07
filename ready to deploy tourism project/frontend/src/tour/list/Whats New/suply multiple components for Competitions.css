@@ -1,0 +1,174 @@
+/* Briefe */
+
+.bottom{
+  width: 75%;
+  margin: 0 auto;
+  padding: 0;
+  margin-left: 6em;
+}
+
+.fp{
+  font-size: 1.2em;
+  font-family: 'Garamond', serif;
+  color: darkolivegreen;
+  line-height: 1.8;
+
+}
+
+.subl{
+  list-style-type: circle;
+  
+
+}
+
+.sun{
+  font-size: 1.2em;
+  font-family: 'Garamond', serif;
+  color: darkolivegreen;
+  line-height: 1.8;
+}
+
+.bt{
+  margin: 0;
+  padding: 0;
+  height: 2.5em;
+  width: 16em;
+  background-color: orangered;
+  border-radius: 0.5em;
+  color: white;
+  font-size: large;
+}
+
+.let{
+  margin-left: 4.5em;
+  margin-top: 1em;
+}
+
+/* ______________________________________________________________________________________________________________________________ */
+
+/* Logo */
+
+.logo{
+  margin-left: 6em;
+}
+
+.logo .h2{
+margin-left: 12em;
+font-size: 1.7em;
+font-weight: bold;
+}
+
+.logo li{
+  line-height: 2.5em;
+  font-size: 1.1em;
+  font-family: 'Garamond', serif;
+  color: darkolivegreen;
+
+}
+
+.logo .para{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2em;
+
+}
+
+/* ___________________________________________________________________________________________________________________________________________ */
+
+
+/* Tagliine */
+
+.tagline{
+  margin-left: 2em;
+}
+
+.tagline .th2{
+  margin-left: 14em;
+  font-weight: bold;
+}
+
+.tagline .tp{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2em; 
+}
+
+.tagline li{
+  line-height: 2.5em;
+  font-size: 1.1em;
+  font-family: 'Garamond', serif;
+  color: darkolivegreen; 
+}
+
+/* __________________________________________________________________________________________________________________________ */
+
+/* Maascot */
+
+
+.mascot{
+  margin-top: 3em;
+}
+
+.mascot .mh2{
+margin-left: 14em;
+font-weight: bold;
+}
+
+.mascot .mp{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2em; 
+}
+
+.mascot li{
+  line-height: 2.5em;
+  font-size: 1.1em;
+  font-family: 'Garamond', serif;
+  color: darkolivegreen; 
+}
+
+/* ___________________________________________________________________________________________________________________ */
+
+/* Soouvenir */
+
+.suvier{
+  margin-top: 3em;
+}
+
+.suvier .suh2{
+  margin-left: 14em;
+}
+
+.suvier .sup1,.sup2{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2em; 
+}
+
+.suvier li{
+  line-height: 2.5em;
+  font-size: 1.1em;
+  font-family: 'Garamond', serif;
+  color: darkolivegreen;  
+}
+
+/* ______________________________________________________________________________________________________________ */
+
+/* Blog */
+
+.blog{
+  margin-top: 3em;
+}
+
+.blog .blh2{
+  font-weight: bold;
+  margin-left: 5.6em;
+}
+
+.blog .blp{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2em; 
+}
+
+.blog li{
+  line-height: 2.5em;
+  font-size: 1.1em;
+  font-family: 'Garamond', serif;
+  color: darkolivegreen;  
+}
